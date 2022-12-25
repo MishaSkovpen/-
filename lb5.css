@@ -1,0 +1,144 @@
+body{
+    border:1px solid black;
+}
+input{
+    display: none;
+}
+[alt=list]{
+    margin-left: 15px;
+}
+label img{
+    margin-right: 5px;
+}
+.tile:checked ~ [for="tile"] {
+    opacity: 1;
+}
+.tile:not(checked) ~ [for="tile"] {
+    opacity: 0.3;
+}
+.list:checked ~ [for="list"] {
+    opacity: 1;
+}
+.list:not(checked) ~ [for="list"] {
+    opacity: 0.3;
+}
+.tile:checked ~ .tile-table{
+    display:block;
+}
+.tile:checked ~ .six-table{
+    display: none;
+}
+.list:checked ~ .six-table{
+    display: block;
+}
+.list:checked ~ .tile-table{
+    display: none;
+}
+.list:checked ~ .tile-lg{
+    display: none;
+}
+.tile-lg{
+    display: none;
+}
+.tile-card{
+    width: 90%;
+    height: 90%;
+}
+.tile-iteminfo i{
+    color:gold;
+}
+.tile-iteminfo span:last-child{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+}
+.tile-iteminfo span:first-child{
+    font-size: 13px;
+    color:grey;
+}
+.tile-maintext p{
+    text-align: justify;
+}
+.tile-img{
+    width: 100%;
+    height: 40%;
+
+}
+.tile-img img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.tile-table{
+    border-collapse: separate;
+    border-spacing: 20px 20px;
+    display: none;
+}
+.tile-table tr td{
+    border: 1px solid grey;
+    padding: 10px;
+}
+.tile-lg{
+    border-collapse: separate;
+    border-spacing: 20px 20px;
+}
+.tile-lg tr td{
+    border: 1px solid grey;
+    padding: 10px;
+}
+[for="tile"] img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+@media(width>=1024px){
+    .tile-table{
+        display: none;
+    }
+    .tile-lg{
+        display: block;
+    }
+    .tile:checked ~ .tile-table{
+        display: none;
+    }
+}
+
+.list-iteminfo i{
+    color:gold;
+}
+.list-iteminfo span:last-child{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+}
+.list-iteminfo span:first-child{
+    font-size: 13px;
+    color:grey;
+}
+.list-maintext p{
+    text-align: justify;
+}
+.list-img{
+    width: 65%;
+    height: 40%;
+    margin: 0 auto;
+
+}
+.list-img img{
+    width: 65%;
+    height: 65%;
+    margin: 0 auto;
+}
+.list-table{
+    border: 1px solid grey;
+    margin: 20px;
+    border-spacing: 10px;
+}
+.list-table tr{
+    width: 100%;
+    height:300px
+}
+.list-table tr td{
+    padding: 5px;
+    width: 33%; 
+    height: 100%;  
+}
